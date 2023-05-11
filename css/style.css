@@ -1,0 +1,63 @@
+:root{
+--bg1: #e4b7e5;
+  --bg2: #63458a;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: linear-gradient(
+    to bottom,
+  var(--bg2) 0%,
+  var(--bg1) 50%,
+    var(--bg1) 0%,
+    var(--bg1) 100%);
+  margin: 1em;
+  text-align: center;
+  color: whitesmoke;
+  height: 70vh;
+}
+nav{
+  border: 1px solid rgb(117, 1, 47);
+display: flex;
+}
+.nav-logo{
+  col
+ 
+}
+ul{
+  border: 1px solid purple;
+  display: flex;
+  margin-top: .2em;
+padding-left: 7em;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+ul li{
+  padding: 0 .2em;
+}
+button{
+  margin-left: .7em;
+}
+
+
+/*hero-section*/
+section{
+  margin-top: 8em;
+}
+
+p {
+  color: red;
+  padding: 1em;
+}
+.card-container{
+display: flex;
+}
+.hero2{
+  background-color: var(--bg1);
+}
