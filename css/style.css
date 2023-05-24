@@ -1,63 +1,245 @@
-:root{
---bg1: #e4b7e5;
-  --bg2: #63458a;
+:root {
+	--bg1: #ca2c92;
+	--bg2: #e2ece9;
+	--bg3: #0c0f0a;
+	--bg4: #7bdff2;
 }
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* font from 1001fonts, download the font ttf format, drag and drop to vscode, then @font-face below */
+@font-face {
+	font-family: venusta;
+	src: url("venusta.regular.ttf");
 }
 
-body{
-  background: linear-gradient(
-    to bottom,
-  var(--bg2) 0%,
-  var(--bg1) 50%,
-    var(--bg1) 0%,
-    var(--bg1) 100%);
-  margin: 1em;
-  text-align: center;
-  color: whitesmoke;
-  height: 70vh;
-}
-nav{
-  border: 1px solid rgb(117, 1, 47);
-display: flex;
-}
-.nav-logo{
-  col
- 
-}
-ul{
-  border: 1px solid purple;
-  display: flex;
-  margin-top: .2em;
-padding-left: 7em;
-  flex-direction: row;
-  list-style-type: none;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-ul li{
-  padding: 0 .2em;
+body {
+	/* code for 2 half page colors
+
+background: linear-gradient(
+  to bottom,
+  var(--bg1) 0%,
+  var(--bg2) 90%,
+  var(--bg1) 90%,
+  var(--bg1) 100%); */
+
+	background-image: url("../images/space.gif");
+	background-repeat: no-repeat;
+	background-size: 100% 80%;
+	background-position: top; /* to specify the direction of half image*/
+	background-color: var(--bg2);
+	text-align: center;
+	color: var(--bg2);
+	height: 100vh;
+	font-size: 3.6em;
+	margin: 2em;
 }
-button{
-  margin-left: .7em;
+/* logo style */
+.logo {
+	font-family: venusta;
+	color: var(--bg4);
+}
+span {
+	color: var(--bg1);
 }
 
+/* nav bar */
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+ul li:hover {
+	font-size: 1.2em;
+}
+
+ul {
+	display: flex;
+	align-items: center;
+
+	flex-direction: row;
+	list-style-type: none;
+}
+
+ul li {
+	padding: 0 0.5em;
+	font-weight: 800;
+	font-size: 1.05em;
+}
+button {
+	font-size: 1em;
+	padding: 0.2em 0.3em;
+	border-radius: 20px;
+	font-weight: bold;
+	background-color: var(--bg4);
+	color: var(--bg3);
+}
 
 /*hero-section*/
-section{
-  margin-top: 8em;
+.hero-section {
+	margin: 6em 2em 10em;
 }
 
+.hero-section h1 {
+	color: var(--bg1);
+	text-shadow: 0 0 1px var(--bg2);
+	padding: 1em 0 1.5em;
+	font-size: 2.2em;
+}
+.hero-section p {
+	color: var(--bg5);
+}
+
+.fa-youtube {
+	color: var(--bg4);
+	padding: 10px;
+}
+h1 ~ :nth-child(3) {
+	text-decoration: underline;
+}
+
+/* cards */
+section {
+	margin-top: 5em;
+}
+img {
+	width: 20em;
+}
 p {
-  color: red;
-  padding: 1em;
+	font-size: 1.2em;
 }
-.card-container{
-display: flex;
+
+.card-container {
+	display: flex;
+	margin: 5em 12em;
+	justify-content: center;
+	align-items: center;
 }
-.hero2{
-  background-color: var(--bg1);
+.hero2 {
+	margin-top: 4em;
+}
+
+.card {
+	background-color: var(--bg3);
+
+	margin: auto 1em;
+	width: 50%;
+	height: 80vh;
+}
+.card-inner {
+	
+	transform-style: preserve-3d;
+	transition: transform 0.8s;
+}
+.card:hover .card-inner {
+	transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	backface-visibility: hidden;
+}
+
+.card-back {
+	transform: rotateY(180deg);
+}
+
+#growth-back {
+	margin-top: 10em;
+}
+/* to make testimony image of equal height with the other images*/
+#testimony,
+#growth {
+	padding: 0;
+	height: 16.5em;
+}
+
+h2 {
+	padding: 1em;
+	font-size: 1.8em;
+	color: var(--bg4);
+}
+h2 + p {
+	padding: 0 1em;
+}
+
+/* footer styling */
+footer a {
+	color: var(--bg1);
+}
+footer {
+	font-size: 1.5em;
+	padding-bottom: 1em;
+	color: var(--bg3);
+	animation: lajoc 2s ease 0s infinite normal forwards;
+}
+/* footer animation generated with 'web code tools' */
+@keyframes lajoc {
+	0% {
+		transform: scale3d(1, 1, 1);
+	}
+
+	30% {
+		transform: scale3d(0.75, 1.25, 1);
+	}
+
+	40% {
+		transform: scale3d(1.25, 0.75, 1);
+	}
+
+	50% {
+		transform: scale3d(0.85, 1.15, 1);
+	}
+
+	65% {
+		transform: scale3d(1.05, 0.95, 1);
+	}
+
+	75% {
+		transform: scale3d(0.95, 1.05, 1);
+	}
+
+	100% {
+		transform: scale3d(1, 1, 1);
+	}
+}
+
+/* page loader */
+#loader-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+#loader {
+	border: 16px solid var(--bg1);
+
+	border-top: 16px solid var(--bg2);
+
+	border-radius: 50%;
+	width: 220px;
+	height: 220px;
+	animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@media screen { max-width: 600px;
+  
 }
