@@ -1,66 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="landing page of template website">
-    <meta name="keywords"
-    content="landing page of createco template website"> <!--for SEO-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="description" content="landing page of template website" />
+		<meta name="keywords" content="landing page of createco template website" />
+		<!--for SEO-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer" />
+		<!-- Latest font awesome (6.4.0) -->
 
-    <title>Createco landing page</title>
-</head>
-<body
-    <header>
-      <!--navbar start-->
-        <nav> 
-          <div class="nav-logo">
-            <h1 alt="createco logo" class="logo">createco</h1>
-          </div>
-           
-          <div class="nav-menu">
-           <ul>
-            <li>Home</li>
-            <li>Blog</li>
-            <li>Pricing</li>
-            <li>Login</li>
-            <li><button>Sign up</button></li>
-           </ul>
-            
-        </div>
-       
-        </nav>
-        <!--navbar start-->
-    </header>
+		<title>Createco landing page</title>
+	</head>
+	<body>
+		<div id="loader-wrapper">
+			<div id="loader"></div>
+		</div>
+		<header>
+			<!--navbar start-->
+			<nav>
+				<div class="nav-logo">
+					<h1 alt="createco logo" class="logo"><span>create</span>co</h1>
+				</div>
 
-   <section class="hero-section">
-    <h1>Build your website using Amazing templates</h1>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam consequuntur ullam commodi, reprehenderit iusto tempore!.</p>
-    <p>Watch the tutorial </p>
-   </section>
+				<div class="nav-menu">
+					<ul>
+						<li>Home</li>
+						<li>Blog</li>
+						<li>Pricing</li>
+						<li>Login</li>
+						<li><button>Sign up</button></li>
+					</ul>
+				</div>
+			</nav>
+			<!--navbar start-->
+		</header>
 
-  <section class="hero2">
-    <div class="card-container">
-    <div class="card">
-        <img src="images/">
-        <h2>Business proposition</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores quod suscipit saepe facilis, expedita dolores deserunt, blanditiis facere sint necessitatibus fuga nostrum. Illum, soluta nisi.</p>
-    </div>
-    <div class="card">
-        <img src="images/">
-        <h2>Company growth</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores quod suscipit saepe facilis, expedita dolores deserunt, blanditiis facere sint necessitatibus fuga nostrum. Illum, soluta nisi.</p>
-    </div>
-    <div class="card">
-        <img src="images/">
-        <h2>Testimonies</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores quod suscipit saepe facilis, expedita dolores deserunt, blanditiis facere sint necessitatibus fuga nostrum. Illum, soluta nisi.</p>
-    </div>
-  </div>
-    </section>
-  <footer>
-    <p>Made by Lajoc_devs</p>
-  </footer>
-</body>
+		<section class="hero-section">
+			<h1>Build your website using Amazing templates</h1>
+			<p>
+				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam
+				consequuntur ullam commodi, reprehenderit iusto tempore!.
+			</p>
+			<p>Watch the tutorial<i class="fa-brands fa-youtube"></i></p>
+		</section>
+
+		<section class="hero2">
+			<div class="card-container">
+				<div class="card">
+					<div class="card-inner">
+						<div class="card-front">
+							<img id="business" src="images/business.jpeg" />
+							<h2 class="business">Business proposition</h2>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+								quod suscipit saepe facilis, expedita dolores deserunt,
+								blanditiis facere sint necessitatibus fuga nostrum. Illum,
+								soluta nisi.
+							</p>
+						</div>
+						<div class="card-back">
+							<h2>Thank You</h2>
+							<p>
+								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure
+								consequuntur sequi magni corrupti? Iste debitis.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-inner">
+						<div class="card-front">
+							<img id="growth" src="images/growth.jpeg" />
+							<h2 class="growth">Company growth</h2>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+								quod suscipit saepe facilis, expedita dolores deserunt,
+								blanditiis facere sint necessitatibus fuga nostrum. Illum,
+								soluta nisi.
+							</p>
+						</div>
+						<div class="card-back" id="growth-back">
+							<h2>Thank You</h2>
+							<p>
+								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure
+								consequuntur sequi magni corrupti? Iste debitis.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-inner">
+						<div class="card-front">
+							<img id="testimony" src="images/testimony.jpeg" />
+							<h2 class="testimony">Testimonies</h2>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+								quod suscipit saepe facilis, expedita dolores deserunt,
+								blanditiis facere sint necessitatibus fuga nostrum. Illum,
+								soluta nisi.
+							</p>
+						</div>
+						<div class="card-back">
+							<h2>Thank You</h2>
+							<p>
+								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure
+								consequuntur sequi magni corrupti? Iste debitis.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<p>Made by <a href="https://github.com/f-lajoc">Lajoc_devs</a></p>
+		</footer>
+
+		<script src="js/script.js"></script>
+	</body>
 </html>
