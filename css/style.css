@@ -248,6 +248,7 @@ footer {
 	
 body{
 	font-size: 1em;
+	background-size: 100% 60%;
 } 
 nav {
 	justify-content: space-between;
