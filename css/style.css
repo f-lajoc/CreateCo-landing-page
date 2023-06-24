@@ -107,15 +107,15 @@ section {
 	margin-top: 5em;
 }
 img {
-	width: 20em;
+	width: inherit;
 }
 p {
-	font-size: 1.2em;
+	font-size: 1em;
 }
 
 .card-container {
 	display: flex;
-	margin: 5em 12em;
+	margin: 5em 3em;
 	justify-content: center;
 	align-items: center;
 }
@@ -152,15 +152,19 @@ p {
 }
 
 #growth-back {
-	margin-top: 10em;
+	margin-top: 15em;
 }
 /* to make testimony image of equal height with the other images*/
 #testimony,
 #growth {
 	padding: 0;
-	height: 16.5em;
+	height: 15em;
 }
 
+.testimony ~ p ,
+.growth ~ p{
+	margin-top: 2em;
+}
 h2 {
 	padding: 1em;
 	font-size: 1.8em;
@@ -240,6 +244,31 @@ footer {
 	}
 }
 
-@media screen { max-width: 600px;
-  
+@media screen and (max-width: 600px){
+	
+body{
+	font-size: 1em;
+} 
+nav {
+	justify-content: space-between;
+}
+.nav-menu-hide, .card2, .card3{
+	display: none;
+}
+
+.card{
+	width: 100%;
+	height: 60vh;
+}
+img {
+	width: inherit;
+}
+
+.hero-section {
+	margin: 2.5em .5em 4em;
+}
+#loader{
+	width: 110px;
+	height: 110px;
+}
 }
