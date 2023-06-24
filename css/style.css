@@ -29,13 +29,14 @@ background: linear-gradient(
 
 	background-image: url("../images/space.gif");
 	background-repeat: no-repeat;
-	background-size: 100% 80%;
+	background-size: 100% 85%;
 	background-position: top; /* to specify the direction of half image*/
 	background-color: var(--bg2);
 	text-align: center;
 	color: var(--bg2);
 	height: 100vh;
-	font-size: 3.6em;
+	
+	font-size: 1.5em;
 	margin: 2em;
 }
 /* logo style */
@@ -81,13 +82,13 @@ button {
 
 /*hero-section*/
 .hero-section {
-	margin: 6em 2em 10em;
+	margin: 2em 2em 1em;
 }
 
 .hero-section h1 {
 	color: var(--bg1);
 	text-shadow: 0 0 1px var(--bg2);
-	padding: 1em 0 1.5em;
+	padding: 1em 0 .5em;
 	font-size: 2.2em;
 }
 .hero-section p {
@@ -115,8 +116,8 @@ p {
 
 .card-container {
 	display: flex;
-	margin: 5em 3em;
-	justify-content: center;
+	margin: 5em 1em;
+	/* justify-content: center; */
 	align-items: center;
 }
 .hero2 {
@@ -126,9 +127,9 @@ p {
 .card {
 	background-color: var(--bg3);
 
-	margin: auto 1em;
+	margin: auto .5em;
 	width: 50%;
-	height: 80vh;
+	height: 70vmax;
 }
 .card-inner {
 	
@@ -156,18 +157,18 @@ p {
 }
 /* to make testimony image of equal height with the other images*/
 #testimony,
-#growth {
+#growth, #business {
 	padding: 0;
-	height: 15em;
+	height: 10em;
 }
 
-.testimony ~ p ,
-.growth ~ p{
+.testimony ~ p
+{
 	margin-top: 2em;
 }
 h2 {
 	padding: 1em;
-	font-size: 1.8em;
+	/* font-size: 1em; */
 	color: var(--bg4);
 }
 h2 + p {
@@ -244,6 +245,7 @@ footer {
 	}
 }
 
+/* For mobile devices */
 @media screen and (max-width: 600px){
 	
 body{
@@ -253,7 +255,7 @@ body{
 nav {
 	justify-content: space-between;
 }
-.nav-menu-hide, .card2, .card3{
+.nav-menu-hide, .card1, .card3{
 	display: none;
 }
 
@@ -266,7 +268,12 @@ img {
 }
 
 .hero-section {
-	margin: 3em .5em 4.5em;
+	margin: 3em .5em 1em;
+}
+.hero-section h1 {
+	
+	padding: 1em 0 1em;
+	
 }
 #loader{
 	width: 110px;
