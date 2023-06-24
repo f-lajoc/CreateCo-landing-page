@@ -82,7 +82,7 @@ button {
 
 /*hero-section*/
 .hero-section {
-	margin: 2em 2em 1em;
+	margin: 2em 2em 3em;
 }
 
 .hero-section h1 {
@@ -129,7 +129,7 @@ p {
 
 	margin: auto .5em;
 	width: 50%;
-	height: 100vh;
+	height: 40vh;
 }
 .card-inner {
 	
