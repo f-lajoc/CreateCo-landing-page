@@ -127,7 +127,7 @@ p {
 .card {
 	background-color: var(--bg3);
 
-	margin: auto 1.5em;
+	margin: auto 0;
 	width: 50%;
 	height: 40vh;
 }
@@ -159,7 +159,7 @@ p {
 #testimony,
 #growth, #business {
 	padding: 0;
-	height: 15em;
+	height: 13em;
 }
 
 .testimony ~ p
