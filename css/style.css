@@ -127,7 +127,7 @@ p {
 .card {
 	background-color: var(--bg3);
 
-	margin: auto 0;
+	margin: auto 0.5em;
 	width: 50%;
 	height: 40vh;
 }
