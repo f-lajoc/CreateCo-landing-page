@@ -2,7 +2,7 @@
 CreateCo landing page
 
 ## Live link
-- []
+- [https://createco-landing-pg.netlify.app/ ]
 ## Thoughts & Troubles
 - My first project using PC
 - I decided to work on this project fews days before exam to get familiar using Vscode and try out some new things i learnt like
