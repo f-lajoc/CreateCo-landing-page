@@ -17,3 +17,5 @@ CreateCo landing page
   - Some many other bugs encountered but i was able to understand how most things work in the course of this project
   - I decided to leave it, focus on exams and continue learning
   - #### ` This project has been rebuilt using it to lay my hands on Tailwind CSS `
+  - Live site - [https://createco-rebuilt.netlify.app/]
+  - Repo link - [https://github.com/f-lajoc/CreateCo-rebuilt]
